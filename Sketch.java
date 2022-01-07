@@ -4,10 +4,10 @@ public class Sketch extends PApplet {
 	
 	
   // global variables 
-  public float width = 500f;
-  public float height = 500f;
-  public float widthSF = width/500f;
-  public float heightSF = height/500f;
+  public float width = 1200f;
+  public float height = 1200f;
+  public float widthSF = width/600f;
+  public float heightSF = height/600f;
 
   public float middleX = width/2;
   public float middleY = height/2;
@@ -18,8 +18,8 @@ public class Sketch extends PApplet {
 
   public float circleSize = 25;
   public float flowerCentreSize = 40;
-  public float petalwidth = 155; 
-  public float petalheight = 25;
+  public float petalwidth = 155*widthSF; 
+  public float petalheight = 25*heightSF;
   
 
   /**
@@ -30,7 +30,7 @@ public class Sketch extends PApplet {
     size((int)width, (int)height);
   }
 
-  
+
   /** 
    * Called once at the beginning of execution.  Add initial set up
    * values here i.e background, stroke, fill etc.
